@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Recommender System</title>
+    <link
+      rel="shortcut icon"
+      href="https://github.com/Megh2005.png"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" href="https://github.com/Megh2005.png" />
     <style>
       /* General Styles */
       body {
@@ -154,8 +160,7 @@
 
     <!-- Cards Container -->
     <div class="container">
-      {% if data %}
-      {% for i in data %}
+      {% if data %} {% for i in data %}
       <div class="card">
         <img src="{{ i[2] }}" alt="Book Image" />
         <div class="card-body">
@@ -163,8 +168,7 @@
           <h4>{{ i[1] }}</h4>
         </div>
       </div>
-      {% endfor %}
-      {% endif %}
+      {% endfor %} {% endif %}
     </div>
   </body>
 </html>
